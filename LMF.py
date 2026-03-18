@@ -107,7 +107,7 @@ def buscar_ativos():
                 'fiis': fiis,
                 'etfs': etfs,
                 'todos': fiis + etfs
-            }
+            } 
 
         except ImportError:
             print(" pandas-datareader não instalado")
