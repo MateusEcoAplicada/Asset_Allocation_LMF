@@ -576,7 +576,7 @@ cols = st.columns([1, 3])
 # COLUNA ESQUERDA - CONTROLE DE PORTFÓLIO
 # ==============================================================================
 
-left_cell = cols[0].container(border=True, height="stretch", vertical_alignment="center")
+left_cell = cols[0].container(border=True)
 
 with left_cell:
     # Selectbox para escolher ativo
@@ -746,7 +746,7 @@ tickers_escolhidos = [item['name'] for item in st.session_state.portfolio]
 pesos_escolhidos = [item['value'] for item in st.session_state.portfolio]
 
 # Criar placeholder fixo para os gráficos
-right_cell = cols[1].container(border=True, height="stretch", vertical_alignment="top")
+right_cell = cols[1].container(border=True)
 
 if tickers_escolhidos:
     try:
